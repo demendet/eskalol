@@ -229,7 +229,7 @@ function App() {
 
         <div className="max-w-5xl mx-auto px-4 pb-8">
           <div className="flex flex-wrap justify-center gap-2 mb-6">
-            {['about', 'github', 'skills', 'timeline', 'guestbook'].map(tab => (
+            {['about', 'github', 'skills', 'timeline'].map(tab => (
               <button key={tab}
                 onClick={() => setActiveTab(tab)}
                 className={`px-4 py-2 text-sm font-bold uppercase pixel-border transition-all ${activeTab === tab ? 'bg-[#000080] text-white' : 'bg-[#c0c0c0] text-black hover:bg-[#a0a0a0]'}`}>
@@ -237,7 +237,6 @@ function App() {
                 {tab === 'github' && '💾 '}
                 {tab === 'skills' && '📊 '}
                 {tab === 'timeline' && '📅 '}
-                {tab === 'guestbook' && '📝 '}
                 {tab}
               </button>
             ))}
@@ -351,6 +350,41 @@ function App() {
                     bro used compiler theory to decide where the tank stands. go check the repo its called
                     google-sheets-wow-assignment-script and its all there
                   </p>
+                </div>
+              </Win98Window>
+
+              <Win98Window title="guestbook.html">
+                <div className="text-black text-sm">
+                  <div className="text-center mb-3">
+                    <h3 className="font-bold">guestbook</h3>
+                  </div>
+                  <div className="bg-gray-200 p-3 mb-3 border-2 border-gray-400">
+                    <input
+                      type="text"
+                      placeholder="name"
+                      value={guestName}
+                      onChange={e => setGuestName(e.target.value)}
+                      className="w-full p-1 mb-2 border-2 border-gray-400 text-sm bg-white"
+                      style={{ borderStyle: 'inset' }}
+                    />
+                    <textarea
+                      placeholder="say something"
+                      value={guestMsg}
+                      onChange={e => setGuestMsg(e.target.value)}
+                      className="w-full p-1 mb-2 border-2 border-gray-400 text-sm bg-white h-20 resize-none"
+                      style={{ borderStyle: 'inset' }}
+                    />
+                    <button
+                      onClick={submitGuestbook}
+                      className="bg-[#c0c0c0] text-black px-4 py-1 text-sm font-bold pixel-border hover:bg-[#a0a0a0] active:border-inset">
+                      submit
+                    </button>
+                  </div>
+                  <div className="max-h-[600px] overflow-y-auto">
+                    {guestEntries.map((e, i) => (
+                      <GuestbookEntry key={i} name={e.name} msg={e.msg} date={e.date} />
+                    ))}
+                  </div>
                 </div>
               </Win98Window>
             </div>
@@ -514,46 +548,6 @@ function App() {
                           <p className="text-gray-600 mt-1">{e.desc}</p>
                         </div>
                       </div>
-                    ))}
-                  </div>
-                </div>
-              </Win98Window>
-            </div>
-          )}
-
-          {activeTab === 'guestbook' && (
-            <div className="space-y-4" style={{ animation: 'slideIn 0.5s ease-out' }}>
-              <Win98Window title="guestbook.html">
-                <div className="text-black text-sm">
-                  <div className="text-center mb-3">
-                    <span className="text-2xl">📝</span>
-                    <h3 className="font-bold">guestbook</h3>
-                  </div>
-                  <div className="bg-gray-200 p-3 mb-3 border-2 border-gray-400">
-                    <input
-                      type="text"
-                      placeholder="name"
-                      value={guestName}
-                      onChange={e => setGuestName(e.target.value)}
-                      className="w-full p-1 mb-2 border-2 border-gray-400 text-sm bg-white"
-                      style={{ borderStyle: 'inset' }}
-                    />
-                    <textarea
-                      placeholder="say something"
-                      value={guestMsg}
-                      onChange={e => setGuestMsg(e.target.value)}
-                      className="w-full p-1 mb-2 border-2 border-gray-400 text-sm bg-white h-20 resize-none"
-                      style={{ borderStyle: 'inset' }}
-                    />
-                    <button
-                      onClick={submitGuestbook}
-                      className="bg-[#c0c0c0] text-black px-4 py-1 text-sm font-bold pixel-border hover:bg-[#a0a0a0] active:border-inset">
-                      submit
-                    </button>
-                  </div>
-                  <div className="max-h-96 overflow-y-auto">
-                    {guestEntries.map((e, i) => (
-                      <GuestbookEntry key={i} name={e.name} msg={e.msg} date={e.date} />
                     ))}
                   </div>
                 </div>
