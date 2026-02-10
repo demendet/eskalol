@@ -108,11 +108,31 @@ function App() {
   const [guestName, setGuestName] = useState('')
   const [guestMsg, setGuestMsg] = useState('')
   const [guestEntries, setGuestEntries] = useState([
-    { name: 'Gullansenansenansenansen ansen hansenansen', msg: 'eskil u still owe me from that cs bet. its been 4 years bro', date: '04/20/2069' },
-    { name: 'anonymous', msg: 'who made this site lmao', date: '12/25/2024' },
-    { name: 'raid_healer_69', msg: 'the google sheets thing still haunts me. i just wanted to know where to stand during the boss fight and this man pulls out a compiler', date: '06/09/2023' },
+    { name: 'Lasse', msg: 'bro i literally fly planes for a living and you still think your job is cooler because you "write code". you make websites eskil. i land a 737 in crosswind in tromsø', date: '02/08/2026' },
+    { name: 'mamma', msg: 'Eskil du må ringe pappa han har kjøpt en ny gitar IGJEN. det er den sjuende nå. huset er fullt. ring meg', date: '01/30/2026' },
+    { name: 'Lukas', msg: 'bygde ferdig terrassen i dag. hva gjorde du? satt foran pcen i 12 timer og klagde på at noe som heter npm ikke fungerer', date: '01/22/2026' },
+    { name: 'Oda', msg: 'storebror hvorfor har du en fan page. jeg jobber på sykehusapoteket og ingen har laget en side om meg. urettferdig egentlig', date: '01/15/2026' },
+    { name: 'pappa', msg: 'Eskil har du sett den nye Strandberg gitaren?? headless. du hadde likt den. forresten mamma sier du skal ringe. og ja jeg kjøpte en gitar til men den var på tilbud så det teller ikke', date: '01/10/2026' },
     { name: 'Tor Ivar (boss)', msg: 'Eskil can you please close your jira tickets', date: '01/15/2025' },
-    { name: 'mamma', msg: 'hei eskil ring meg tilbake. pappa lurer på om du kommer hjem til jul i år. vi har reinsdyrkjøtt', date: '03/01/2024' },
+    { name: 'raid_healer_69', msg: 'the google sheets thing still haunts me. i just wanted to know where to stand during the boss fight and he pulls out a compiler', date: '06/09/2023' },
+    { name: 'Lasse', msg: 'hahaha husker du den gangen eskil prøvde å lære seg å fly dronen min og kjørte den rett i fjorden. 8000kr. rett i vannet. han sa ingenting bare gikk inn og satte seg foran pcen igjen', date: '11/14/2024' },
+    { name: 'anonymous', msg: 'who made this site lmao', date: '12/25/2024' },
+    { name: 'Lukas', msg: 'eskil kom opp til alta i helga vi skal bygge garasje. nei du kan ikke ta med laptopen. JO jeg mener det', date: '09/03/2024' },
+    { name: 'mamma', msg: 'hei eskil ring meg tilbake. pappa lurer på om du kommer hjem til jul i år. vi har reinsdyrkjøtt. Oda kommer. Lukas og Lasse kommer også. bare du som ikke har svart', date: '03/01/2024' },
+    { name: 'pappa', msg: 'fant en gibson les paul 1978 på finn.no for 45000. mamma sier nei. eskil kan du ringe mamma og si at det er en investering', date: '08/17/2024' },
+    { name: 'Oda', msg: 'mamma gråter litt fordi du ikke ringer. bare ring henne eskil det tar 5 minutter', date: '04/22/2024' },
+    { name: 'wow_guild_officer', msg: 'eskil afka midt i en raid igjen fordi han "hadde en idé for google sheets scriptet". vi wipet. vi wipet 3 ganger.', date: '05/15/2023' },
+    { name: 'Lasse', msg: 'karasjok gutta i oslo nå. eskil viste meg kontoret hans. det er 7 personer der. hyggelig men litt som et stort soverom med skjermer', date: '07/20/2023' },
+    { name: 'appresso_kollega', msg: 'han har mass mange tabs åpne til enhver tid. jeg telte en gang. 47 tabs. to av dem var wow wikier', date: '10/05/2024' },
+    { name: 'Lukas', msg: 'eskil sa han skulle hjelpe meg å flytte i 2019. han dukket opp 3 timer for sent med en laptop under armen og sa "sorry hadde en bug". vi var ferdige', date: '06/12/2023' },
+    { name: 'mamma', msg: 'veldig fin nettside eskil!! men hvem har laget den?? pappa sier han vil ha en egen nettside for gitarsamlingen sin. IKKE gjør det', date: '02/09/2026' },
+    { name: 'pappa', msg: 'Eskil kan du lage en nettside for gitarene mine?? mamma sier nei men det er jo mitt hobby. jeg har 7 nå. nei 8. jeg glemte den i garasjen', date: '02/09/2026' },
+    { name: 'Oda', msg: 'pappa har nå 8 gitarer. ÅTTE. han spiller på kanskje 2 av dem. mamma er ikke fornøyd. eskil dette er din feil fordi du ga ham den tuner appen', date: '02/10/2026' },
+    { name: 'raid_tank_420', msg: 'the #define statements in that google sheets script are genuinely unhinged. he defined a shortcut for every single class spec combo. there are like 30 of them', date: '07/01/2023' },
+    { name: 'Lasse', msg: 'landed i karasjok i dag. minus 35. tenkte på eskil som sitter i oslo og klager når det er minus 5. blitt myk', date: '12/20/2024' },
+    { name: 'anonymous2', msg: 'i found this page by googling "eskalol" expecting a league of legends highlight. this is better', date: '11/01/2024' },
+    { name: 'Lukas', msg: 'eskil sin headless gitar ser ut som noen kutta av hodet på en vanlig gitar med en sag. han sier det er "moderne design". sure bro', date: '04/10/2024' },
+    { name: 'pappa', msg: 'eskil og jeg spilte gitar sammen på jul. han på sin headless og jeg på min nye taylor. mamma sa vi måtte stoppe etter 20 minutter fordi Oda fikk vondt i hodet. fin jul ellers', date: '12/26/2024' },
   ])
   const [activeTab, setActiveTab] = useState('about')
   const [matrixChars, setMatrixChars] = useState([])
