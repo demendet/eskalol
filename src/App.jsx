@@ -108,7 +108,7 @@ function App() {
   const [guestName, setGuestName] = useState('')
   const [guestMsg, setGuestMsg] = useState('')
   const [guestEntries, setGuestEntries] = useState([
-    { name: 'Lasse', msg: 'bro i literally fly planes for a living and you still think your job is cooler because you "write code". you make websites eskil. i land a 737 in crosswind in tromsø', date: '02/08/2026' },
+    { name: 'Lasse', msg: 'jeg flyr bokstavelig talt fly til jobb og du tror fortsatt jobben din er kulere fordi du "skriver kode". du lager nettsider eskil. jeg lander en 737 i sidevind i tromsø', date: '02/08/2026' },
     { name: 'mamma', msg: 'Eskil Oda fortalte meg at pappa har kjøpt enda en gitar. den sjuende. han har ikke plass i gjøvik leiligheten engang. ring meg', date: '01/30/2026' },
     { name: 'Lukas', msg: 'bygde ferdig terrassen i dag. hva gjorde du? satt foran pcen i 12 timer og klagde på at noe som heter npm ikke fungerer', date: '01/22/2026' },
     { name: 'Oda', msg: 'storebror hvorfor har du en fan page. jeg jobber på sykehusapoteket og ingen har laget en side om meg. urettferdig egentlig', date: '01/15/2026' },
@@ -129,7 +129,7 @@ function App() {
     { name: 'pappa', msg: 'Eskil kan du lage en nettside for gitarene mine?? jeg har 7 nå. nei 8. glemte den i boden. leiligheten i gjøvik er ikke så stor men det går fint', date: '02/09/2026' },
     { name: 'Oda', msg: 'var på besøk hos pappa i gjøvik. han har nå 8 gitarer. ÅTTE. i en tolværelses. han spiller på kanskje 2 av dem. eskil dette er din feil fordi du ga ham den tuner appen', date: '02/10/2026' },
     { name: 'raid_tank_420', msg: 'the #define statements in that google sheets script are genuinely unhinged. he defined a shortcut for every single class spec combo. there are like 30 of them', date: '07/01/2023' },
-    { name: 'Lasse', msg: 'landed i karasjok i dag. minus 35. tenkte på eskil som sitter i oslo og klager når det er minus 5. blitt myk', date: '12/20/2024' },
+    { name: 'Lasse', msg: 'landa i karasjok i dag. minus 35. tenkte på eskil som sitter i oslo og klager når det er minus 5. blitt myk den karen', date: '12/20/2024' },
     { name: 'anonymous2', msg: 'i found this page by googling "eskalol" expecting a league of legends highlight. this is better', date: '11/01/2024' },
     { name: 'Lukas', msg: 'eskil sin headless gitar ser ut som noen kutta av hodet på en vanlig gitar med en sag. han sier det er "moderne design". sure bro', date: '04/10/2024' },
     { name: 'pappa', msg: 'eskil kom til gjøvik etter jul og vi spilte gitar sammen. han på sin headless og jeg på min nye taylor. Oda ringte og sa hun hørte oss gjennom telefonen til eskil som han glemte å legge på. fin kveld ellers', date: '12/26/2024' },
