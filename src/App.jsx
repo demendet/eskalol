@@ -62,14 +62,14 @@ function FloatingEmoji({ emoji, style }) {
 
 function GitHubStats() {
   const repos = [
-    { name: 'generator-swagger-es-6', stars: 11, lang: 'JavaScript', desc: 'His MAGNUM OPUS. A yeoman generator. 11 stars. ELEVEN. he peaked here honestly' },
-    { name: 'srcds_python', stars: 3, lang: 'Python', desc: 'RCON commands for game servers because playing CS:GO wasnt enough he had to MANAGE the servers too' },
-    { name: 'StackSmashingDetected', stars: 2, lang: 'JavaScript', desc: 'university group project. the name is a C buffer overflow joke. nerd alert' },
-    { name: 'cryptodwarf', stars: 1, lang: 'Python', desc: 'crypto mining monitor from 2017. he was literally mining with DWARVES during the crypto boom lmaooo' },
-    { name: 'CS-GO_Compomaster', stars: 0, lang: 'Java', desc: 'competition manager for CS:GO in JAVA. this man really said "yeah java is great for this"' },
-    { name: 'DOMReplay', stars: 0, lang: 'JavaScript', desc: 'records and replays browser interactions. actually kinda sick ngl but zero stars rip' },
-    { name: 'google-sheets-wow-assignment-script', stars: 0, lang: 'Sheets??', desc: 'wrote a CUSTOM PROGRAMMING LANGUAGE inside google sheets for WoW raid assignments. im not joking.' },
-    { name: 'lolchan-django', stars: 0, lang: 'Python', desc: 'lolchan. LOL CHAN. the name says it all' },
+    { name: 'generator-swagger-es-6', stars: 11, lang: 'JavaScript', desc: 'yeoman generator. 11 stars. this is the one he puts on his resume probably' },
+    { name: 'srcds_python', stars: 3, lang: 'Python', desc: 'rcon commands for game servers' },
+    { name: 'StackSmashingDetected', stars: 2, lang: 'JavaScript', desc: 'uni group project' },
+    { name: 'cryptodwarf', stars: 1, lang: 'Python', desc: 'crypto mining stats. december 2017. we all had a phase' },
+    { name: 'CS-GO_Compomaster', stars: 0, lang: 'Java', desc: 'cs:go comp manager. in java. yeah' },
+    { name: 'DOMReplay', stars: 0, lang: 'JavaScript', desc: 'records and replays dom stuff. this ones actually decent tbh' },
+    { name: 'google-sheets-wow-assignment-script', stars: 0, lang: '???', desc: 'he wrote a whole programming language inside google sheets for wow raids. not a joke btw this is real go look at it' },
+    { name: 'lolchan-django', stars: 0, lang: 'Python', desc: 'lolchan' },
   ]
   return (
     <div className="space-y-2">
@@ -108,11 +108,11 @@ function App() {
   const [guestName, setGuestName] = useState('')
   const [guestMsg, setGuestMsg] = useState('')
   const [guestEntries, setGuestEntries] = useState([
-    { name: 'xXx_N00bSl4y3r_xXx', msg: 'sick page bro. eskil still owes me 50kr from that CS bet lol', date: '04/20/2069' },
-    { name: 'CryptoKing2017', msg: 'remember when eskil said bitcoin was going to 100k? well... he was right eventually lmao took a few years tho', date: '12/25/2017' },
-    { name: 'WoWRaidLeader', msg: 'this mans really wrote an entire scripting language just to assign healers in our raid. absolute legend or absolute maniac. maybe both.', date: '06/09/2023' },
-    { name: 'AppressoBoss', msg: 'Eskil please stop reading this at work and finish your tickets. Thanks.', date: '01/15/2025' },
-    { name: 'his mom probably', msg: 'very nice website eskil!! but when are you coming home to visit?? its been 3 months. dad says hi. we made your favorite fish.', date: '03/01/2024' },
+    { name: 'Gullansenansenansenansen ansen hansenansen', msg: 'eskil u still owe me from that cs bet. its been 4 years bro', date: '04/20/2069' },
+    { name: 'anonymous', msg: 'who made this site lmao', date: '12/25/2024' },
+    { name: 'raid_healer_69', msg: 'the google sheets thing still haunts me. i just wanted to know where to stand during the boss fight and this man pulls out a compiler', date: '06/09/2023' },
+    { name: 'Tor Ivar (boss)', msg: 'Eskil can you please close your jira tickets', date: '01/15/2025' },
+    { name: 'mamma', msg: 'hei eskil ring meg tilbake. pappa lurer på om du kommer hjem til jul i år. vi har reinsdyrkjøtt', date: '03/01/2024' },
   ])
   const [activeTab, setActiveTab] = useState('about')
   const [matrixChars, setMatrixChars] = useState([])
@@ -169,37 +169,37 @@ function App() {
 
       <div className="relative z-10">
         <div className="under-construction">
-          <span className="text-black font-bold text-xs bg-yellow-400 px-2">🚧 UNDER CONSTRUCTION SINCE 2003 🚧</span>
+          <span className="text-black font-bold text-xs bg-yellow-400 px-2">🚧 UNDER CONSTRUCTION FOREVER 🚧</span>
         </div>
 
         <MarqueeBar speed={20}>
           <span className="text-yellow-400 text-sm">
-            ⭐ WELCOME TO THE OFFICIAL ESKIL "ESKALOL" OPDAHL NORDLAND FAN PAGE ⭐ NOW WITH 100% MORE JAVASCRIPT ⭐ BEST VIEWED IN INTERNET EXPLORER 6 AT 800x600 ⭐ YOU ARE VISITOR NUMBER 1,337,420 ⭐ SIGN THE GUESTBOOK ⭐ POWERED BY GEOCITIES ⭐ MADE WITH NOTEPAD ⭐
+            ⭐ eskalol.com ⭐ best viewed in internet explorer 6 ⭐ you are visitor number 1,337,420 ⭐ sign the guestbook ⭐ karasjok's finest export ⭐ 11 github stars and counting ⭐
           </span>
         </MarqueeBar>
 
         <header className="text-center py-8 relative">
           <div className="mb-4 inline-block">
-            <img src={eskilPhoto} alt="the legend himself" className="w-48 h-48 object-cover rounded-full border-4 border-yellow-400 pulse" style={{ imageRendering: 'auto' }} />
-            <div className="text-xs text-yellow-300 mt-1 blink">rare photo from the school days</div>
+            <img src={eskilPhoto} alt="him" className="w-48 h-48 object-cover rounded-full border-4 border-yellow-400 pulse" style={{ imageRendering: 'auto' }} />
+            <div className="text-xs text-yellow-300 mt-1 blink">he doesnt know this site exists</div>
           </div>
           <h1 className="text-5xl md:text-7xl font-bold fire-text tracking-wider mb-2" onClick={() => setClickCount(c => c + 1)}>
             <span className="glitch">ESKALOL</span>
           </h1>
-          <div className="text-xl rainbow-text font-bold mb-4">
-            ★ The Legend, The Myth, The JavaScript Developer ★
+          <div className="text-lg rainbow-text font-bold mb-4">
+            from karasjok with mass love
           </div>
           <div className="text-sm text-cyan-300 blink mb-4">
-            👆 click the name 10 times for a secret 👆
+            click the name 10 times btw
           </div>
           <div className="flex justify-center gap-4 flex-wrap">
             <a href="https://github.com/Eskalol" target="_blank" rel="noreferrer"
               className="bg-gray-900 text-white px-4 py-2 pixel-border hover:bg-gray-700 text-sm bounce-boy inline-block no-underline">
-              💻 GitHub (25 repos of glory)
+              💻 github
             </a>
-            <a href="https://github.com/Eskalol?tab=followers" target="_blank" rel="noreferrer"
+            <a href="https://eska.no" target="_blank" rel="noreferrer"
               className="bg-purple-900 text-white px-4 py-2 pixel-border hover:bg-purple-700 text-sm pulse inline-block no-underline">
-              👥 28 Followers (famous)
+              🌐 eska.no (its down lol)
             </a>
           </div>
           <div className="mt-4">
@@ -225,109 +225,111 @@ function App() {
 
           {activeTab === 'about' && (
             <div className="space-y-4" style={{ animation: 'slideIn 0.5s ease-out' }}>
-              <Win98Window title="who_is_eskalol.txt">
+              <Win98Window title="who_is_this_guy.txt">
                 <div className="text-black space-y-3 text-sm">
                   <p className="text-lg font-bold text-blue-800">
                     "Im a guy from a small town in northern Norway with passion for programming"
                   </p>
-                  <p className="italic text-gray-600 text-xs">actual quote from his github bio. poetry.</p>
+                  <p className="italic text-gray-600 text-xs">his actual github bio btw he wrote this himself</p>
 
                   <p>
-                    So basically Eskil Opdahl Nordland aka <b>eskalol</b> is this dude from <b>Karasjok</b> up in northern Norway
-                    (yes THE Karasjok, population like 1500 people, middle of Finnmark, reindeer capital of the world basically).
-                    He somehow made it all the way down to Oslo and now works at <b>Appresso AS</b> which is a small dev shop that
-                    does Django and React stuff. They got like 7 employees. Cozy vibes.
+                    so this is eskil. hes from karasjok which if you dont know is this tiny place way up in finnmark
+                    where theres like 1500 people and genuinely more reindeer than humans. somehow he ended up in oslo
+                    working as a developer at appresso which is this small company that does django and react stuff
                   </p>
 
                   <p>
-                    He studied at the <b>University of Oslo</b> (UiO) where he took courses like INF5750 (Open Source Development)
-                    and INF3121. His university group project was literally called <b>"StackSmashingDetected"</b> which is a C
-                    buffer overflow error message. Peak nerd humor honestly.
+                    he went to university of oslo and studied informatics. his group project was called StackSmashingDetected
+                    which ok thats kinda funny if you know what a stack smashing error is and if you dont then idk google it
                   </p>
 
                   <p>
-                    He is a member of the <b>Devilry</b> organization on GitHub which is UiOs assignment delivery system.
-                    He also co founded an esports org called <b>NiehkuEsports</b> based in Troms Norway.
-                    The contact email for that org is pokebusiness@pokesports.org which is honestly hilarious.
+                    hes on like 4 different github organizations. devilry (thats UiOs assignment system),
+                    something called lavvu, niehkuesports which is an esports org he cofounded,
+                    and appresso which is his actual job. the esports org contact email is pokebusiness@pokesports.org and
+                    i think about that a lot
                   </p>
 
                   <p>
-                    His code is literally preserved in the <b>Arctic Code Vault</b> on Svalbard. Thats right. His JavaScript
-                    is frozen under permafrost in a decommissioned coal mine for 1000 years. Future civilizations will
-                    discover his Yeoman generators and be very confused.
+                    oh and his code is in the arctic code vault on svalbard. like frozen in a mountain for 1000 years.
+                    so when society collapses and they dig it up theyre gonna find his yeoman generators and
+                    have absolutely no idea what to do with them
                   </p>
                 </div>
               </Win98Window>
 
-              <Win98Window title="fun_facts.exe">
+              <Win98Window title="stats.exe">
                 <div className="text-black text-sm">
                   <table className="w-full border-collapse">
                     <tbody>
                       <tr className="border-b border-gray-400">
-                        <td className="p-2 font-bold bg-blue-100">📍 Location</td>
-                        <td className="p-2">Oslo, Norway (originally from Karasjok, Finnmark. yes really. google it.)</td>
+                        <td className="p-2 font-bold bg-blue-100">📍 from</td>
+                        <td className="p-2">karasjok, finnmark</td>
                       </tr>
                       <tr className="border-b border-gray-400">
-                        <td className="p-2 font-bold bg-blue-100">💼 Job</td>
-                        <td className="p-2">Developer at Appresso AS (they do Django + React + vibes)</td>
+                        <td className="p-2 font-bold bg-blue-100">📍 now</td>
+                        <td className="p-2">oslo</td>
                       </tr>
                       <tr className="border-b border-gray-400">
-                        <td className="p-2 font-bold bg-blue-100">🎓 School</td>
-                        <td className="p-2">University of Oslo (Informatics)</td>
+                        <td className="p-2 font-bold bg-blue-100">💼 job</td>
+                        <td className="p-2">dev @ appresso as</td>
                       </tr>
                       <tr className="border-b border-gray-400">
-                        <td className="p-2 font-bold bg-blue-100">💻 Repos</td>
-                        <td className="p-2">25 public repos (mostly JavaScript, some Python)</td>
+                        <td className="p-2 font-bold bg-blue-100">🎓 school</td>
+                        <td className="p-2">uio, informatics</td>
                       </tr>
                       <tr className="border-b border-gray-400">
-                        <td className="p-2 font-bold bg-blue-100">⭐ Top Stars</td>
-                        <td className="p-2">11 stars on generator-swagger-es-6. ELEVEN. He is basically mass popular.</td>
+                        <td className="p-2 font-bold bg-blue-100">💻 repos</td>
+                        <td className="p-2">25</td>
                       </tr>
                       <tr className="border-b border-gray-400">
-                        <td className="p-2 font-bold bg-blue-100">🏆 Badges</td>
-                        <td className="p-2">Arctic Code Vault Contributor + Pull Shark x2 🦈</td>
+                        <td className="p-2 font-bold bg-blue-100">⭐ most stars</td>
+                        <td className="p-2">11</td>
                       </tr>
                       <tr className="border-b border-gray-400">
-                        <td className="p-2 font-bold bg-blue-100">🎮 Games</td>
-                        <td className="p-2">CS:GO (built tools, servers, AND an esports org) + WoW Classic (scripting language for raids)</td>
+                        <td className="p-2 font-bold bg-blue-100">👥 followers</td>
+                        <td className="p-2">28 (follows 46 tho)</td>
                       </tr>
                       <tr className="border-b border-gray-400">
-                        <td className="p-2 font-bold bg-blue-100">⛏️ Crypto Phase</td>
-                        <td className="p-2">2017 crypto mining bro (built cryptodwarf and cryptoforge). Mining with dwarves fr</td>
+                        <td className="p-2 font-bold bg-blue-100">🏆 badges</td>
+                        <td className="p-2">arctic code vault + pull shark x2</td>
+                      </tr>
+                      <tr className="border-b border-gray-400">
+                        <td className="p-2 font-bold bg-blue-100">🎮 games</td>
+                        <td className="p-2">csgo, wow classic</td>
                       </tr>
                       <tr>
-                        <td className="p-2 font-bold bg-blue-100">🌐 Website</td>
-                        <td className="p-2">eska.no (currently down lol. self signed cert error. classic dev move)</td>
+                        <td className="p-2 font-bold bg-blue-100">🌐 website</td>
+                        <td className="p-2">eska.no (ssl cert error for months now)</td>
                       </tr>
                     </tbody>
                   </table>
                 </div>
               </Win98Window>
 
-              <Win98Window title="the_wow_incident.doc">
+              <Win98Window title="the_google_sheets_thing.doc">
                 <div className="text-black text-sm space-y-2">
                   <div className="text-center">
                     <span className="text-3xl">⚔️</span>
-                    <h3 className="text-red-600 font-bold text-lg">THE WOW RAID ASSIGNMENT INCIDENT OF 2023</h3>
                   </div>
                   <p>
-                    Ok so picture this. Its 2023. Eskil is playing WoW Classic with his guild. They need to assign roles for raids.
-                    Normal people would just use a spreadsheet or discord or literally anything simple.
+                    ok so eskil plays wow classic right. and his guild needed to figure out raid assignments.
+                    like who goes where during boss fights. normal thing
                   </p>
                   <p>
-                    But not our boy Eskil. No no no. This man went and created an <b>ENTIRE CUSTOM PROGRAMMING LANGUAGE</b> inside
-                    Google Sheets. Im talking tokenization. Parsing trees. Interpretation. The whole compiler pipeline.
-                    FOR A GOOGLE SHEET. FOR A VIDEO GAME.
+                    most people would just type it in a spreadsheet or post it in discord.
+                    eskil made a programming language
                   </p>
                   <p>
-                    It has <code className="bg-gray-200 px-1">#define</code> statements. It has logical operators like AND, OR,
-                    joint denial, and negation. You can write conditions like
+                    inside google sheets. with tokenization and a parser and an interpreter.
+                    it has <code className="bg-gray-200 px-1">#define</code> statements.
+                    you write stuff like
                     <code className="bg-gray-200 px-1 block my-1">class == 'DeathKnight' && spec == 'Blood'</code>
-                    This is the most over engineered spreadsheet in the history of gaming. Maybe in the history of spreadsheets.
-                    Actually no, definitely in the history of spreadsheets.
+                    to assign healers
                   </p>
-                  <p className="text-center font-bold text-blue-800">
-                    He automated the process of assigning healers. In a video game. Using compiler theory. In Google Sheets. King behavior.
+                  <p>
+                    bro used compiler theory to decide where the tank stands. go check the repo its called
+                    google-sheets-wow-assignment-script and its all there
                   </p>
                 </div>
               </Win98Window>
@@ -336,73 +338,66 @@ function App() {
 
           {activeTab === 'github' && (
             <div className="space-y-4" style={{ animation: 'slideIn 0.5s ease-out' }}>
-              <Win98Window title="github_stats.exe">
+              <Win98Window title="github.exe">
                 <div className="text-black text-sm mb-3">
                   <div className="flex items-center gap-2 mb-2">
                     <span className="text-3xl">💾</span>
                     <div>
                       <div className="font-bold text-lg">github.com/Eskalol</div>
-                      <div className="text-gray-600 text-xs">25 repos | 28 followers | 46 following</div>
+                      <div className="text-gray-600 text-xs">25 repos, 28 followers, 46 following</div>
                     </div>
                   </div>
                   <div className="flex flex-wrap gap-2 mb-3">
-                    <span className="bg-blue-600 text-white text-xs px-2 py-0.5 rounded-full">🧊 Arctic Code Vault Contributor</span>
-                    <span className="bg-purple-600 text-white text-xs px-2 py-0.5 rounded-full">🦈 Pull Shark x2</span>
+                    <span className="bg-blue-600 text-white text-xs px-2 py-0.5 rounded-full">🧊 arctic code vault</span>
+                    <span className="bg-purple-600 text-white text-xs px-2 py-0.5 rounded-full">🦈 pull shark x2</span>
                   </div>
                   <div className="flex flex-wrap gap-2 mb-3">
-                    <span className="bg-yellow-100 text-yellow-800 text-xs px-2 py-0.5 border border-yellow-400">Org: Devilry</span>
-                    <span className="bg-yellow-100 text-yellow-800 text-xs px-2 py-0.5 border border-yellow-400">Org: Lavvu</span>
-                    <span className="bg-yellow-100 text-yellow-800 text-xs px-2 py-0.5 border border-yellow-400">Org: NiehkuEsports</span>
-                    <span className="bg-yellow-100 text-yellow-800 text-xs px-2 py-0.5 border border-yellow-400">Org: Appresso AS</span>
+                    <span className="bg-yellow-100 text-yellow-800 text-xs px-2 py-0.5 border border-yellow-400">devilry</span>
+                    <span className="bg-yellow-100 text-yellow-800 text-xs px-2 py-0.5 border border-yellow-400">lavvu</span>
+                    <span className="bg-yellow-100 text-yellow-800 text-xs px-2 py-0.5 border border-yellow-400">niehkuesports</span>
+                    <span className="bg-yellow-100 text-yellow-800 text-xs px-2 py-0.5 border border-yellow-400">appresso</span>
                   </div>
                   <p className="text-gray-600">
-                    bro follows more people (46) than follow him (28). down bad on the github social scene.
-                    but hey he has his code frozen in arctic permafrost for 1000 years so who is really winning here
+                    follows more people than follow him back. rough
                   </p>
                 </div>
               </Win98Window>
 
-              <Win98Window title="repos_ranked_by_clout.txt">
+              <Win98Window title="repos.txt">
                 <div className="bg-black p-3 rounded text-green-400 font-mono">
-                  <div className="text-xs text-gray-500 mb-2">[LOADING REPOSITORIES...]</div>
                   <GitHubStats />
                   <div className="text-xs text-gray-500 mt-3">
-                    total stars across all repos: roughly 15. mass famous.
-                    for context the react repo has like 230k stars. eskil is only 229,985 stars behind.
-                    closing the gap every day. well, not really. but spiritually.
+                    about 15 total stars across everything. hes getting there
                   </div>
                 </div>
               </Win98Window>
 
-              <Win98Window title="language_breakdown.png">
+              <Win98Window title="languages.png">
                 <div className="text-black text-sm">
-                  <h3 className="font-bold mb-2">Languages Used (by repo count)</h3>
                   <div className="space-y-1">
                     <div className="flex items-center gap-2">
                       <div className="bg-yellow-400 h-4 rounded" style={{ width: '80%' }} />
-                      <span className="text-xs">JavaScript (16 repos) 🏆</span>
+                      <span className="text-xs">javascript (16 repos)</span>
                     </div>
                     <div className="flex items-center gap-2">
                       <div className="bg-blue-500 h-4 rounded" style={{ width: '25%' }} />
-                      <span className="text-xs">Python (5 repos)</span>
+                      <span className="text-xs">python (5 repos)</span>
                     </div>
                     <div className="flex items-center gap-2">
                       <div className="bg-orange-500 h-4 rounded" style={{ width: '5%' }} />
-                      <span className="text-xs">Java (1 repo... enough said)</span>
+                      <span className="text-xs">java (1 repo)</span>
                     </div>
                     <div className="flex items-center gap-2">
                       <div className="bg-green-500 h-4 rounded" style={{ width: '5%' }} />
-                      <span className="text-xs">C# (1 uni project)</span>
+                      <span className="text-xs">c# (1 repo)</span>
                     </div>
                     <div className="flex items-center gap-2">
                       <div className="bg-cyan-500 h-4 rounded" style={{ width: '5%' }} />
-                      <span className="text-xs">Dart (1 fork of the dart SDK because why not)</span>
+                      <span className="text-xs">dart (forked the sdk once)</span>
                     </div>
                   </div>
                   <p className="mt-3 text-gray-600 text-xs">
-                    this man really said "JavaScript is my personality" and went all in.
-                    16 out of 25 repos. thats a 64% JavaScript rate.
-                    he works at a Django/Python shop btw. the irony is thick.
+                    works at a python/django shop. 16 out of 25 personal repos are javascript
                   </p>
                 </div>
               </Win98Window>
@@ -411,36 +406,34 @@ function App() {
 
           {activeTab === 'skills' && (
             <div className="space-y-4" style={{ animation: 'slideIn 0.5s ease-out' }}>
-              <Win98Window title="power_levels.exe">
+              <Win98Window title="skills.exe">
                 <div className="bg-black p-4 rounded">
-                  <h3 className="text-green-400 font-mono text-center mb-4 text-lg">⚡ OFFICIAL POWER LEVEL ASSESSMENT ⚡</h3>
-                  <SkillBar skill="JavaScript (its his whole personality)" level={95} color="#f7df1e" />
-                  <SkillBar skill="Python / Django (work stuff)" level={75} color="#3776ab" />
-                  <SkillBar skill="React" level={80} color="#61dafb" />
-                  <SkillBar skill="Over Engineering Simple Things" level={100} color="#ff0000" />
-                  <SkillBar skill="CS:GO Server Management" level={90} color="#ff8c00" />
-                  <SkillBar skill="WoW Raid Assignment Automation" level={100} color="#9400d3" />
-                  <SkillBar skill="Yeoman Generators (who still uses these)" level={85} color="#5aadbb" />
-                  <SkillBar skill="Crypto Mining (2017 era)" level={60} color="#f7931a" />
-                  <SkillBar skill="Docker" level={70} color="#2496ed" />
-                  <SkillBar skill="Maintaining Personal Website (eska.no is down)" level={5} color="#ff0000" />
-                  <SkillBar skill="GitHub Star Collection" level={3} color="#ffcc00" />
-                  <SkillBar skill="Following People on GitHub (46 following, 28 followers)" level={88} color="#ff69b4" />
+                  <SkillBar skill="javascript" level={95} color="#f7df1e" />
+                  <SkillBar skill="python / django" level={75} color="#3776ab" />
+                  <SkillBar skill="react" level={80} color="#61dafb" />
+                  <SkillBar skill="overcomplicating things" level={100} color="#ff0000" />
+                  <SkillBar skill="csgo server admin" level={90} color="#ff8c00" />
+                  <SkillBar skill="wow spreadsheet engineering" level={100} color="#9400d3" />
+                  <SkillBar skill="yeoman generators" level={85} color="#5aadbb" />
+                  <SkillBar skill="crypto mining (retired)" level={60} color="#f7931a" />
+                  <SkillBar skill="docker" level={70} color="#2496ed" />
+                  <SkillBar skill="keeping eska.no online" level={5} color="#ff0000" />
+                  <SkillBar skill="getting github stars" level={3} color="#ffcc00" />
                 </div>
               </Win98Window>
 
-              <Win98Window title="achievements_unlocked.txt">
+              <Win98Window title="achievements.txt">
                 <div className="text-black text-sm space-y-2">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
                     {[
-                      { icon: '🧊', title: 'ARCTIC VAULT', desc: 'Code literally frozen in a mountain on Svalbard. Future humans will study his Yeoman generators.' },
-                      { icon: '🦈', title: 'PULL SHARK x2', desc: 'Got PRs merged. Twice. Double shark. Jaws who??' },
-                      { icon: '⛏️', title: 'CRYPTO MINER (RETIRED)', desc: 'Built entire monitoring stack for his mining rigs in 2017. Probably made like 50 bucks.' },
-                      { icon: '🏗️', title: 'META AUTOMATOR', desc: 'Built generators that generate generators. Automated the automation of automation.' },
-                      { icon: '🎮', title: 'ESPORTS FOUNDER', desc: 'Co founded NiehkuEsports. Built Docker containers for CS:GO servers. Built competition tools. The whole pipeline.' },
-                      { icon: '📝', title: 'LANGUAGE DESIGNER', desc: 'Created a programming language inside Google Sheets. For WoW. Has #define statements. This is real.' },
-                      { icon: '🎓', title: 'STACK SMASHER', desc: 'Named his uni project after a buffer overflow error. Professor probably had questions.' },
-                      { icon: '💀', title: 'WEBSITE MAINTAINER', desc: 'Personal website eska.no has a self signed cert error. Been like that for a while. Priorities.' },
+                      { icon: '🧊', title: 'ARCTIC VAULT', desc: 'code frozen in svalbard. 1000 years of storage.' },
+                      { icon: '🦈', title: 'PULL SHARK x2', desc: 'merged pull requests. twice.' },
+                      { icon: '⛏️', title: 'CRYPTO MINER', desc: 'built a whole monitoring stack in december 2017. called it cryptodwarf.' },
+                      { icon: '🏗️', title: 'META AUTOMATOR', desc: 'made generators that make generators.' },
+                      { icon: '🎮', title: 'ESPORTS ORG FOUNDER', desc: 'cofounded niehkuesports. built docker containers for csgo servers. the email is pokebusiness@pokesports.org' },
+                      { icon: '📝', title: 'LANGUAGE CREATOR', desc: 'made a programming language in google sheets for wow raid assignments.' },
+                      { icon: '🎓', title: 'STACK SMASHER', desc: 'named his uni project after a buffer overflow.' },
+                      { icon: '💀', title: 'WEBMASTER', desc: 'eska.no has had an ssl error for a while now.' },
                     ].map((a, i) => (
                       <div key={i} className="bg-gray-100 p-2 border-2 border-gray-300 flex items-start gap-2">
                         <span className="text-2xl">{a.icon}</span>
@@ -454,25 +447,19 @@ function App() {
                 </div>
               </Win98Window>
 
-              <Win98Window title="appresso_file.doc">
+              <Win98Window title="appresso.doc">
                 <div className="text-black text-sm space-y-2">
                   <h3 className="font-bold flex items-center gap-2">
-                    <span className="text-2xl">🏢</span> APPRESSO AS
+                    <span className="text-2xl">🏢</span> appresso as
                   </h3>
                   <p>
-                    Eskil works at Appresso AS in Oslo. They are a small dev shop with about 7 employees (LinkedIn says 11 to 50 but
-                    lets be real its 7). Founded in 2014. Revenue about 7 million NOK which is roughly 670k USD. Not bad for 7 people.
+                    his actual job. small dev company in oslo, like 7 people. they do django and react.
+                    founded in 2014, revenue around 7 million nok. office is at oslo gate 23C
                   </p>
                   <p>
-                    Their tech stack is Django, Python, ReactJS. Their GitHub tagline is "Flexible and robust web solutions with long lifespan"
-                    which is very corporate. They made django_cradmin (13 stars) and a VSCode extension.
-                  </p>
-                  <p>
-                    The CEO is Tor Ivar Johansen and the CTO is Espen Angell Kristiansen who has been coding since 1999.
-                    Office is at Oslo gate 23C. If you want to send Eskil a pizza or something.
-                  </p>
-                  <p className="text-gray-500 text-xs">
-                    (please dont actually send pizza to his office. or do. i cant stop you. he probably likes pizza tho)
+                    their github says "flexible and robust web solutions with long lifespan" which is
+                    corporate speak but ok. they made django_cradmin which has 13 stars so the whole
+                    company combined has more stars than eskil does individually
                   </p>
                 </div>
               </Win98Window>
@@ -481,20 +468,20 @@ function App() {
 
           {activeTab === 'timeline' && (
             <div className="space-y-4" style={{ animation: 'slideIn 0.5s ease-out' }}>
-              <Win98Window title="life_timeline.exe">
+              <Win98Window title="timeline.exe">
                 <div className="text-black text-sm">
                   <div className="relative border-l-4 border-blue-600 ml-4 space-y-4">
                     {[
-                      { year: '???', icon: '👶', title: 'Born in Karasjok', desc: 'Karasjok, Finnmark. Population like 1500. Reindeer outnumber humans. Minus 40 in winter. This is where legends come from apparently.' },
-                      { year: '~2014', icon: '🎓', title: 'University of Oslo', desc: 'Studies Informatics at UiO. Joins the Devilry organization. Names group project StackSmashingDetected because of course he does.' },
-                      { year: '~2015', icon: '🎮', title: 'CS:GO Era Begins', desc: 'Builds CS-GO_Compomaster in Java. Creates srcds_python for server management. Builds EsportFinnmark website. Goes ALL IN on esports infrastructure.' },
-                      { year: '~2016', icon: '🔧', title: 'The Yeoman Phase', desc: 'Creates generator-swagger-es-6 (his most popular project ever at 11 stars). Also makes yo-inception and generator-eska-module. He is automating everything.' },
-                      { year: '2017', icon: '⛏️', title: 'The Crypto Mining Phase', desc: 'December 2017. Bitcoin is mooning. Eskil builds cryptodwarf and cryptoforge to monitor his mining rigs. Named one after a literal dwarf. Mining with dwarves.' },
-                      { year: '~2017', icon: '🎯', title: 'NiehkuEsports Founded', desc: 'Co founds NiehkuEsports. Builds Docker containers for CS:GO servers. The esports pipeline is complete. Contact: pokebusiness@pokesports.org (amazing).' },
-                      { year: '~2018', icon: '💼', title: 'Joins Appresso AS', desc: 'Gets a real job at Appresso AS in Oslo. Django and React. Professional developer mode activated. Still thinks about CS:GO servers probably.' },
-                      { year: '2020', icon: '🧊', title: 'Arctic Code Vault', desc: 'GitHub archives his code in a vault under Svalbard permafrost. His JavaScript will outlive us all. 1000 year storage. Let that sink in.' },
-                      { year: '2023', icon: '⚔️', title: 'THE WOW INCIDENT', desc: 'Creates a full programming language in Google Sheets for WoW Classic raid assignments. Compiler theory meets spreadsheets meets video games. Peak Eskil.' },
-                      { year: '2025', icon: '🌐', title: 'Present Day', desc: 'Still at Appresso. eska.no is still down. 28 GitHub followers. Code frozen in the arctic. Living the dream honestly.' },
+                      { year: '???', icon: '👶', title: 'karasjok', desc: 'born in karasjok finnmark. population 1500. minus 40 in winter. more reindeer than people' },
+                      { year: '~2014', icon: '🎓', title: 'moves to oslo', desc: 'starts informatics at uio. joins the devilry org. names his group project StackSmashingDetected' },
+                      { year: '~2015', icon: '🎮', title: 'csgo era', desc: 'builds CS-GO_Compomaster (in java), srcds_python, the EsportFinnmark website. goes deep' },
+                      { year: '~2016', icon: '🔧', title: 'yeoman arc', desc: 'makes generator-swagger-es-6. publishes to npm. gets 11 stars. also makes yo-inception which is a generator for generators' },
+                      { year: '2017', icon: '⛏️', title: 'crypto', desc: 'builds cryptodwarf and cryptoforge in december 2017. we dont talk about how much he made' },
+                      { year: '~2017', icon: '🎯', title: 'niehkuesports', desc: 'cofounds an esports org. dockerizes csgo servers. email: pokebusiness@pokesports.org' },
+                      { year: '~2018', icon: '💼', title: 'gets a job', desc: 'joins appresso as in oslo. django and react. still has side projects going' },
+                      { year: '2020', icon: '🧊', title: 'arctic vault', desc: 'github freezes his code in svalbard. its gonna be there for 1000 years' },
+                      { year: '2023', icon: '⚔️', title: 'the wow thing', desc: 'builds a full programming language inside google sheets for raid assignments. with #define statements and everything. go look at the repo' },
+                      { year: 'now', icon: '🌐', title: 'present', desc: 'still at appresso. eska.no still down. 28 followers. code in the arctic. living' },
                     ].map((e, i) => (
                       <div key={i} className="ml-6 relative">
                         <div className="absolute w-4 h-4 bg-blue-600 rounded-full -left-8 top-1 border-2 border-white" />
@@ -520,20 +507,19 @@ function App() {
                 <div className="text-black text-sm">
                   <div className="text-center mb-3">
                     <span className="text-2xl">📝</span>
-                    <h3 className="font-bold">SIGN THE GUESTBOOK!!</h3>
-                    <p className="text-xs text-gray-500">let eskil know what you think</p>
+                    <h3 className="font-bold">guestbook</h3>
                   </div>
                   <div className="bg-gray-200 p-3 mb-3 border-2 border-gray-400">
                     <input
                       type="text"
-                      placeholder="your name (or alias)"
+                      placeholder="name"
                       value={guestName}
                       onChange={e => setGuestName(e.target.value)}
                       className="w-full p-1 mb-2 border-2 border-gray-400 text-sm bg-white"
                       style={{ borderStyle: 'inset' }}
                     />
                     <textarea
-                      placeholder="write something nice (or not)"
+                      placeholder="say something"
                       value={guestMsg}
                       onChange={e => setGuestMsg(e.target.value)}
                       className="w-full p-1 mb-2 border-2 border-gray-400 text-sm bg-white h-20 resize-none"
@@ -542,7 +528,7 @@ function App() {
                     <button
                       onClick={submitGuestbook}
                       className="bg-[#c0c0c0] text-black px-4 py-1 text-sm font-bold pixel-border hover:bg-[#a0a0a0] active:border-inset">
-                      📮 SUBMIT
+                      submit
                     </button>
                   </div>
                   <div className="max-h-96 overflow-y-auto">
@@ -559,19 +545,17 @@ function App() {
             <div className="fixed inset-0 bg-black/80 flex items-center justify-center z-50" onClick={() => setShowSecret(false)}>
               <div className="bg-black border-4 border-green-400 p-8 max-w-md text-center" onClick={e => e.stopPropagation()}>
                 <div className="text-6xl mb-4 spin">🏆</div>
-                <h2 className="text-green-400 font-mono text-xl mb-4 glitch">SECRET UNLOCKED</h2>
+                <h2 className="text-green-400 font-mono text-xl mb-4 glitch">ok you found it</h2>
                 <p className="text-green-300 font-mono text-sm mb-4">
-                  you found the easter egg. congrats. you clicked a heading 10 times.
-                  thats basically what eskil does at work except he clicks buttons in Django admin.
+                  you clicked a heading 10 times. why. anyway his npm package generator-swagger-es-6 is on version 0.3.9
+                  which means he updated it at least 9 times and never hit 1.0
                 </p>
                 <p className="text-yellow-400 font-mono text-xs mb-4">
-                  fun fact: eskils npm package generator-swagger-es-6 is at version 0.3.9
-                  which means he published it 9+ times and it still never hit 1.0.
-                  the forever beta king. respect honestly.
+                  also he forked the entire dart sdk once. just the whole thing. its sitting in his repos. no commits on it or anything. just forked it and left it there
                 </p>
                 <button onClick={() => setShowSecret(false)}
                   className="bg-green-400 text-black px-4 py-2 font-bold pixel-border hover:bg-green-300">
-                  CLOSE (or click outside idc)
+                  ok close this
                 </button>
               </div>
             </div>
@@ -579,20 +563,19 @@ function App() {
 
           <div className="mt-8 space-y-4">
             <div className="under-construction">
-              <span className="text-black font-bold text-xs bg-yellow-400 px-2">🚧 MORE SECTIONS COMING SOON (PROBABLY NOT) 🚧</span>
+              <span className="text-black font-bold text-xs bg-yellow-400 px-2">🚧 more stuff eventually maybe 🚧</span>
             </div>
 
             <MarqueeBar speed={25}>
               <span className="text-cyan-400 text-xs">
-                🔥 THIS PAGE WAS MADE WITH LOVE AND JAVASCRIPT 🔥 ESKIL IF YOU ARE READING THIS PLEASE FIX ESKA.NO 🔥 YOUR SSL CERT IS EXPIRED BRO 🔥 ALSO UPDATE YOUR GITHUB BIO ITS BEEN THE SAME SINCE LIKE 2016 🔥 28 FOLLOWERS AND COUNTING 🔥 ARCTIC CODE VAULT LEGEND 🔥
+                eskil if you see this please fix eska.no the cert has been expired for months ⭐ also your github bio hasnt changed since like 2016 ⭐ 28 followers ⭐ karasjok represent ⭐
               </span>
             </MarqueeBar>
 
             <div className="text-center text-xs text-gray-400 py-4 space-y-1">
-              <p>best viewed in Netscape Navigator 4.0 at 800x600 resolution</p>
-              <p>this site is certified 100% hand crafted artisanal HTML</p>
-              <p>no frameworks were harmed in the making of this website (just kidding its React + Vite + Tailwind lol)</p>
-              <p className="blink text-yellow-400">🌟 eskalol fan club established 2003 🌟</p>
+              <p>best viewed in netscape navigator 4.0</p>
+              <p>made at 2am with mass lack of sleep</p>
+              <p className="blink text-yellow-400">🌟 eskalol fan club est. 2003 🌟</p>
               <div className="flex justify-center gap-4 mt-2 text-2xl">
                 <span className="spin inline-block">⭐</span>
                 <span className="bounce-boy inline-block">🎮</span>
@@ -601,7 +584,7 @@ function App() {
                 <span className="float inline-block">🤡</span>
               </div>
               <p className="text-gray-600 mt-2">
-                © 2003{new Date().getFullYear() > 2003 ? ` to ${new Date().getFullYear()}` : ''} eskalol fan club international. all rights reserved. none of this is real. or is it. eskil is real tho.
+                © 2003{new Date().getFullYear() > 2003 ? ` to ${new Date().getFullYear()}` : ''}
               </p>
             </div>
           </div>
