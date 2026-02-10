@@ -233,8 +233,8 @@ function App() {
                   <p className="italic text-gray-600 text-xs">actual quote from his github bio. poetry.</p>
 
                   <p>
-                    So basically Eskil Opdahl Nordland aka <b>eskalol</b> is this dude from some tiny town up in northern Norway
-                    (probably somewhere in Finnmark based on the fact he literally built a website called EsportFinnmark lol).
+                    So basically Eskil Opdahl Nordland aka <b>eskalol</b> is this dude from <b>Karasjok</b> up in northern Norway
+                    (yes THE Karasjok, population like 1500 people, middle of Finnmark, reindeer capital of the world basically).
                     He somehow made it all the way down to Oslo and now works at <b>Appresso AS</b> which is a small dev shop that
                     does Django and React stuff. They got like 7 employees. Cozy vibes.
                   </p>
@@ -265,7 +265,7 @@ function App() {
                     <tbody>
                       <tr className="border-b border-gray-400">
                         <td className="p-2 font-bold bg-blue-100">📍 Location</td>
-                        <td className="p-2">Oslo, Norway (originally from a smol town in the north)</td>
+                        <td className="p-2">Oslo, Norway (originally from Karasjok, Finnmark. yes really. google it.)</td>
                       </tr>
                       <tr className="border-b border-gray-400">
                         <td className="p-2 font-bold bg-blue-100">💼 Job</td>
@@ -485,7 +485,7 @@ function App() {
                 <div className="text-black text-sm">
                   <div className="relative border-l-4 border-blue-600 ml-4 space-y-4">
                     {[
-                      { year: '???', icon: '👶', title: 'Born in Northern Norway', desc: 'Small town kid in Finnmark region. Probably cold. Very cold. Like really cold.' },
+                      { year: '???', icon: '👶', title: 'Born in Karasjok', desc: 'Karasjok, Finnmark. Population like 1500. Reindeer outnumber humans. Minus 40 in winter. This is where legends come from apparently.' },
                       { year: '~2014', icon: '🎓', title: 'University of Oslo', desc: 'Studies Informatics at UiO. Joins the Devilry organization. Names group project StackSmashingDetected because of course he does.' },
                       { year: '~2015', icon: '🎮', title: 'CS:GO Era Begins', desc: 'Builds CS-GO_Compomaster in Java. Creates srcds_python for server management. Builds EsportFinnmark website. Goes ALL IN on esports infrastructure.' },
                       { year: '~2016', icon: '🔧', title: 'The Yeoman Phase', desc: 'Creates generator-swagger-es-6 (his most popular project ever at 11 stars). Also makes yo-inception and generator-eska-module. He is automating everything.' },
